@@ -32,11 +32,9 @@ ggplot(bond.data, aes(x=Budget_Adj, y=US_Adj, color=Year)) +
 # Just for fun: is there a correlation between the number of times 
 # Bond says "Bond, James Bond" and return??
 
-
-ggplot(bond.data, aes(x=Year, y=Budget, colour = movie)) +
+ggplot(bond.data, aes(x=Movie, y=Budget, colour = movie)) +
     geom_point() +
     scale_color_continuous()
-
 
 # It seems the movies earn more if he says it 0 or 2 times?
 # Probably a spurious correlation!
