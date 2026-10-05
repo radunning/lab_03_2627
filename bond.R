@@ -1,3 +1,4 @@
+
 library(tidyverse)
 bond.data <- read_csv("data/jamesbond.csv")
 bond.data
@@ -31,7 +32,7 @@ ggplot(bond.data, aes(x=Budget_Adj, y=US_Adj, color=Year)) +
 # Just for fun: is there a correlation between the number of times 
 # Bond says "Bond, James Bond" and return??
 
-ggplot(bond.data, aes(x=BJB, y=US_Adj)) +
+ggplot(bond.data, aes(x=US_Adj, y=BJB)) +
     geom_point() +
     scale_color_continuous()
 
