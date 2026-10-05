@@ -39,7 +39,6 @@ bond.data |>
 The most profitable movie was Skyfall, made in 2012. It made a profit of about $300 million.
 Is there a correlation between budget and earnings?
 ```{r}
-# Is there a correlation between budget and earnings?
 ggplot(bond.data, aes(x=Budget, y=US_Gross)) +
     geom_point()
 ```
