@@ -57,10 +57,10 @@ ggplot(bond.data, aes(x=Budget_Adj, y=US_Adj, color=Year)) +
     scale_color_continuous()
 ```
 Still seems budget is increasing with year even after inflation adjustment, but the correlation with returns is now much less clear.
-```{r}
-# Just for fun: is there a correlation between the number of times 
-# Bond says "Bond, James Bond" and return??
 
+Just for fun: is there a correlation between the number of times 
+Bond says "Bond, James Bond" and return??
+```{r}
 ggplot(bond.data, aes(x=BJB, y=US_Adj)) +
     geom_point() +
     scale_color_continuous()
